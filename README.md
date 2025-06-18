@@ -1,96 +1,99 @@
-# Stone: Astro Theme
+# Euro Finishes Website
 
-Stone is a free and open-source Astro theme specially designed for Business, Marketing, SaaS and Startup websites.
+This is the official website for Euro Finishes, a luxury construction company in Miami specializing in European-influenced design.
 
-## Key Features:
+## About Euro Finishes
 
-- **Built with Tailwind CSS & Alpine.js**
-- **5+ Pages**
-- **15+ Sections**
-- Clean & Modern Design
-- Fully Responsive
-- Dark & Light Mode
-- Fast & Performant
-- Super Lightweight
-- View Transitions (experimental)
-- **Prettier** Code Formatter
-- **Google Fonts**
-- **Remix Icons**
-- Free Updates
+European Design. Miami Luxury. Since 2007.
 
-## Getting Started
+We bring European minimalist principles to Miami's most distinctive homes. No generic luxury. No contractor marketing speak. Just clean lines, exceptional materials, and the kind of restraint that makes a statement.
 
-### Requirements
+## Website Features
 
-- Basic knowledge of Astro, HTML and CSS.
-- Text editor (We recommend Visual Studio Code)
-- Node.js 18 or higher.
+- **Single-page design** with smooth scroll animations
+- **Video hero section** with Vimeo background
+- **Responsive design** optimized for mobile, tablet, and desktop
+- **SEO optimized** with structured data and social media tags
+- **Performance focused** with hardware-accelerated animations
+- **Clean, maintainable code** with separated CSS and JavaScript
 
-### Install dependencies
+## Technology Stack
 
-Navigate to your project folder and install its dependencies:
-
-```
-npm install
-```
-
-### Start
-
-Once the installation is done, you can now run your app:
-
-```
-npm run dev
-```
-
-This runs the app in development mode. Open http://localhost:3000 to view it in the browser.
-
-### Build
-
-```
-npm run build
-```
-
-This builds the app for production to the `./dist/` folder.
+- **HTML5** with semantic markup and accessibility features
+- **CSS3** with custom properties, Grid, and Flexbox
+- **Vanilla JavaScript** with Intersection Observer API
+- **No frameworks** - lightweight and fast loading
+- **Modern browser features** with graceful degradation
 
 ## Project Structure
 
-Inside the project, you'll see the following folders and files:
-
 ```
 /
-├── public/
-├── src/
-│   ├── components/
-│   ├── layouts/
-│   └── pages/
-├── .prettierrc
-├── astro.config.mjs
-├── package-lock.json
-├── package.json
-├── README.md
-├── tailwind.config.cjs
-└── tsconfig.json
+├── index.html                      # Main website file
+├── styles.css                      # External stylesheet with CSS custom properties
+├── script.js                       # External JavaScript with modular animations
+├── assets/                         # Static assets
+│   ├── ef-logo-monogram.svg        # Navigation logo
+│   ├── ef-logo.svg                 # Video overlay logo
+│   ├── euro-kitchen.png            # Kitchen showcase image
+│   └── favicon/                    # Favicon and app icons
+│       ├── favicon.ico
+│       ├── apple-touch-icon.png
+│       ├── favicon-16x16.png
+│       ├── favicon-32x32.png
+│       ├── android-chrome-192x192.png
+│       ├── android-chrome-512x512.png
+│       └── site.webmanifest
+├── Euro-Finishes-Website-Copy.md   # Content reference
+└── CLAUDE.md                       # Development guidance
 ```
 
-- `public/*` - Any static assets (images, fonts, icons, ...)
-- `src/*` - Project source code (components, pages, ...)
-- `src/components/*` - Reusable Astro components used to build pages.
-- `src/layouts/*` - Astro components that define the UI structure shared by one or more pages..
-- `src/pages/*` - Astro components used to create new pages on your site. Each page is exposed as a route based on its file name.
-- `.prettierrc` - Prettier configuration file.
-- `astro.config.mjs` - Astro configuration file.
-- `package.json` - File used by JavaScript package managers to manage your dependencies. It also defines the scripts that are commonly used to run Astro.
-- `tailwind.config.cjs` - Tailwind configuration file. The theme section is where you define your color palette and fonts.
-- `tsconfig.json` - TypeScript configuration file.
+## Development
 
-## Deployment
+### Local Development
 
-Ready to build and deploy your site? Follow the [official documentation](https://docs.astro.build/en/guides/deploy/).
+To view the website locally, simply open the `index.html` file in your browser:
 
-## Support
+```bash
+# Open directly in browser
+open index.html
 
-If you have any questions or suggestions do not hesitate to contact me.
+# Or serve with a local server for better development experience
+python -m http.server 8000
+# Then visit http://localhost:8000
+```
 
-## License
+### Making Updates
 
-This project is licensed under the terms of the MIT license.
+The website is designed for easy maintenance:
+
+- **Content updates**: Edit text directly in `index.html`
+- **Style changes**: Modify `styles.css` (uses CSS custom properties for easy theming)
+- **Animation adjustments**: Update `script.js`
+- **Colors/spacing**: Update CSS custom properties in `:root` section of `styles.css`
+
+### Key Animations
+
+- **Auto-hiding navigation** that responds to scroll direction
+- **Scroll-triggered animations** using Intersection Observer
+- **Kitchen image reveal** with scroll-tied animation
+- **SVG logo drawing animation** on desktop
+- **Staggered card animations** with enhanced hover effects
+
+## Browser Support
+
+- Modern browsers supporting ES6+, CSS Grid, and Intersection Observer
+- Graceful degradation for older browsers
+- No build process required - works directly in any browser
+
+## Contact
+
+Euro Finishes  
+223 NE 108th Street  
+Miami, FL 33161  
+Email: info@europff.com
+
+---
+
+Licensed & Insured | Florida Certified Residential Contractor  
+© 2025 Euro Finishes. All rights reserved.

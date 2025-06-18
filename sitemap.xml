@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    
+    <!-- Main page -->
+    <url>
+        <loc>https://europff.com/</loc>
+        <lastmod>2025-01-18T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        
+        <!-- Images for LLM understanding -->
+        <image:image>
+            <image:loc>https://europff.com/assets/euro-kitchen.png</image:loc>
+            <image:title>Euro Finishes European Minimalist Kitchen Design</image:title>
+            <image:caption>Luxury kitchen renovation showcasing European minimalist design with clean lines, natural wood cabinetry, and integrated appliances by Euro Finishes in Miami</image:caption>
+            <image:geo_location>Miami, FL</image:geo_location>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://europff.com/assets/ef-logo.svg</image:loc>
+            <image:title>Euro Finishes Company Logo</image:title>
+            <image:caption>Euro Finishes logo - European design luxury construction company serving Miami since 2007</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Section anchors for deep linking -->
+    <url>
+        <loc>https://europff.com/#about</loc>
+        <lastmod>2025-01-18T00:00:00+00:00</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://europff.com/#contact</loc>
+        <lastmod>2025-01-18T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+</urlset>

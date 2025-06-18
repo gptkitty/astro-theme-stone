@@ -18,9 +18,10 @@ python -m http.server 8000
 This is a single-page HTML website for Euro Finishes, a luxury construction company in Miami specializing in European-influenced design.
 
 ### Core Technologies
-- **Pure HTML/CSS**: Single `index.html` file with embedded styles
+- **Separated HTML/CSS/JS**: Modular structure with external stylesheets and scripts
 - **Vanilla JavaScript**: No frameworks, just modern ES6+ features
 - **CSS Grid & Flexbox**: Modern layout techniques
+- **CSS Custom Properties**: Consistent theming and easy maintenance
 - **Intersection Observer API**: Scroll-triggered animations
 - **CSS Transforms**: Hardware-accelerated animations
 
@@ -28,12 +29,20 @@ This is a single-page HTML website for Euro Finishes, a luxury construction comp
 ```
 /
 ├── index.html              # Main website file
-├── Euro-Finishes-Logo.png  # Main logo (black/gray)
+├── styles.css              # External stylesheet with CSS custom properties
+├── script.js               # External JavaScript with modular animations
 ├── assets/                 # Static assets
 │   ├── ef-logo-monogram.svg # Navigation logo
 │   ├── ef-logo.svg          # Video overlay logo  
 │   ├── euro-kitchen.png     # Kitchen showcase image
-│   └── hero.webp           # Legacy hero image (not used)
+│   └── favicon/             # Favicon and app icons
+│       ├── favicon.ico
+│       ├── apple-touch-icon.png
+│       ├── favicon-16x16.png
+│       ├── favicon-32x32.png
+│       ├── android-chrome-192x192.png
+│       ├── android-chrome-512x512.png
+│       └── site.webmanifest
 ├── Euro-Finishes-Website-Copy.md # Content reference
 └── CLAUDE.md               # This file
 ```
