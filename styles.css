@@ -207,12 +207,9 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    opacity: 1;
-    transition: opacity 1s ease-out;
-}
-
-.video-logo-overlay.fade-out {
     opacity: 0;
+    transition: opacity 1s ease-out;
+    will-change: opacity;
 }
 
 .video-logo {

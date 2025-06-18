@@ -138,12 +138,47 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ===== FADE OUT VIDEO LOGO AFTER 5 SECONDS =====
+    // ===== VIDEO LOGO TIMING MANAGEMENT =====
     const videoLogo = document.querySelector('.video-logo-overlay');
     if (videoLogo) {
-        setTimeout(() => {
-            videoLogo.classList.add('fade-out');
-        }, 5000);
+        
+        function showLogoWithDelay() {
+            // Directly set opacity without class changes
+            videoLogo.style.opacity = '1';
+            
+            // Start 5-second fade-out timer after logo appears
+            setTimeout(() => {
+                videoLogo.style.opacity = '0';
+            }, 5000);
+        }
+        
+        // Check if Vimeo Player API is available
+        if (typeof window.Vimeo !== 'undefined') {
+            const iframe = document.querySelector('iframe[src*="vimeo.com"]');
+            if (iframe) {
+                try {
+                    const player = new Vimeo.Player(iframe);
+                    
+                    // Show logo when video is ready
+                    player.ready().then(() => {
+                        // Small delay to ensure video has started loading
+                        setTimeout(showLogoWithDelay, 800);
+                    }).catch((error) => {
+                        // Fallback if player ready fails
+                        setTimeout(showLogoWithDelay, 2000);
+                    });
+                } catch (error) {
+                    // Fallback if Vimeo Player constructor fails
+                    setTimeout(showLogoWithDelay, 2000);
+                }
+            } else {
+                // No iframe found, use fallback
+                setTimeout(showLogoWithDelay, 1500);
+            }
+        } else {
+            // Vimeo API not loaded, use fallback timing
+            setTimeout(showLogoWithDelay, 2000);
+        }
     }
 
     // ===== OBSERVE ELEMENTS FOR ENHANCED ANIMATIONS =====
