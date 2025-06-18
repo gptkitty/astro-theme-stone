@@ -2,21 +2,27 @@
 const services = [
   {
     step: '01',
-    name: 'Design',
+    name: 'Architects',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Who need a builder who respects design intent',
   },
   {
     step: '02',
-    name: 'Develop',
+    name: 'Homeowners',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Who value craft over flash',
   },
   {
     step: '03',
-    name: 'Maintain',
+    name: 'Developers',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Creating something genuinely different',
+  },
+  {
+    step: '04',
+    name: 'Anyone',
+    description:
+      'Tired of contractors who oversell and underdeliver',
   },
 ];
 ---
@@ -24,8 +30,8 @@ const services = [
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col gap-12 sm:gap-16">
-      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Services</h2>
-      <div class="grid gap-8 lg:grid-cols-3">
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Who We Work With</h2>
+      <div class="grid gap-8 lg:grid-cols-2">
         {
           services.map((service) => (
             <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">

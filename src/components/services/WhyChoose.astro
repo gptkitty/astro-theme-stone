@@ -1,0 +1,44 @@
+---
+const reasons = [
+  {
+    name: 'Proven Track Record',
+    description: '18 years serving Miami\'s most discerning clients, from celebrities to sophisticated developers.',
+  },
+  {
+    name: 'European Standards',
+    description: 'Craftsmanship traditions that prioritize quality over speed.',
+  },
+  {
+    name: 'Design Understanding',
+    description: 'We work with architecture, not against it. Your design intent stays intact.',
+  },
+  {
+    name: 'No Surprises',
+    description: 'Clear timelines, regular communication, transparent process. Construction without the stress.',
+  },
+  {
+    name: 'Selective Client Base',
+    description: 'We choose projects where we can deliver our best work. Quality over quantity.',
+  },
+];
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="flex flex-col gap-12 sm:gap-16">
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Why Choose Euro Finishes</h2>
+      <div class="grid gap-6 lg:grid-cols-3">
+        {
+          reasons.map((reason) => (
+            <div class="flex flex-col gap-4">
+              <h3 class="text-xl font-medium">{reason.name}</h3>
+              <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                {reason.description}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
